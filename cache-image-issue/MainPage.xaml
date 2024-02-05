@@ -11,6 +11,30 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <!--Grid broken by 1.0.7-->
+            <Label
+                Text="Grid broken by 1.0.7 due to implicit height/width"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="130" RowDefinitions="130, 130">
+               <ffimageloading:CachedImage Source="maui_beach_wikimedia.png"
+                  Aspect="AspectFill" IsVisible="true"
+                  AutomationProperties.IsInAccessibleTree="False"></ffimageloading:CachedImage>
+               <Image Source="maui_beach_wikimedia.png" Grid.Row="1"
+                  Aspect="AspectFill" IsVisible="true"
+                  AutomationProperties.IsInAccessibleTree="False">
+               </Image>
+            </Grid>
+
+            <!--Grid fixed by 1.0.7-->
+            <Label
+                Text="Grid fixed by 1.0.7 with explicit height/width"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
             <Grid ColumnDefinitions="130" RowDefinitions="130, 130">
                <ffimageloading:CachedImage Source="maui_beach_wikimedia.png" HeightRequest="130" WidthRequest="130"
                   Aspect="AspectFill" IsVisible="true"

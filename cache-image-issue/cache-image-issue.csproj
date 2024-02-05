@@ -53,7 +53,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-		<PackageReference Include="FFImageLoading.Maui" Version="1.0.6" />
+		<PackageReference Include="FFImageLoading.Maui" Version="1.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>
